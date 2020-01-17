@@ -40,7 +40,7 @@
         </div>
     </div>
   </div>
-  <div class="footer-copyright text-center py-3">©2019 by Jade Luany: Projeto Final
+  <div class="footer-copyright text-center py-3">©2019 by Jade Luany: Projeto Final- LOO
   </div>
 </footer>
 <!-- Footer -->
