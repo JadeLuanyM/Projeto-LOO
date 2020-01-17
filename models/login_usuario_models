@@ -1,0 +1,19 @@
+<?
+    $usuario = $_POST['usuario'];
+    $entrar = $_POST['entrar'];
+    $senha = $_POST['senha'];
+    $connect = mysqli_connect('localhost','root','');
+    $db = mysqli_select_db(base_dados_loo');
+        
+    if(isset($entrar)) {
+        $verifica = mysqli_query("SELECT * FROM tabusuario WHERE usuario = '$usuario' AND senha = '$senha'") or die("erro ao selecionar");
+          if (mysqli_num_rows($verifica)<=0){
+            echo"<script language='javascript' type='text/javascript'>
+            alert('Login e/ou senhas incorretos');window.C:\xampp\htdocs\loo\home.href='login.php';</script>;
+            die();
+          }else{
+             setcookie("usuario",$usuario);
+             header("C:\xampp\htdocs\loo\home:index.php");
+          }        
+        }
+    ?>    

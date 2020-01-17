@@ -1,0 +1,33 @@
+<!-- Default form login -->
+<div class="container">
+    <div class="col-md-12 mx-4 my-4"> 
+<form class="text-center border border-light p-5" method="post" action="../models/login_usuario_models.php"> 
+    <p class="h4 mb-4">Entrar</p>
+
+    <!-- Email -->
+    <input type="text" id="usuario" class="form-control mb-4" name="usuario" placeholder="Usuário">
+
+    <!-- Password -->
+    <input type="password" id="senha" name="senha" class="form-control mb-4" placeholder="Senha">
+
+    <div class="d-flex justify-content-around">
+        <div>
+            <!-- Remember me -->
+            <div class="custom-control custom-checkbox">
+                <input type="checkbox" class="custom-control-input" id="defaultLoginFormRemember">
+                <label class="custom-control-label" for="defaultLoginFormRemember">Lembrar meu acesso</label>
+            </div>
+        </div>
+    </div>
+
+    <!-- Sign in button -->
+    <button class="btn btn-danger btn-bg my-3" type="submit" value="entrar" id="entrar">Entrar</button>
+
+    <!-- Register -->
+    <p>Não tem cadastro?
+        <a href="../home/cadastro.php">Cadastra-se</a>
+    </p>
+
+        </form> </div>
+</div>
+<!-- Default form login -->
